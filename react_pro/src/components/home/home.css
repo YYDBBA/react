@@ -4,4 +4,16 @@
     text-align: center;
     line-height: 50px;
     background-color: #ccc;
+    transition: all .5s;
+}
+
+.todo-list {
+    width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+.todo-list ul li {
+    list-style: none;
 }
