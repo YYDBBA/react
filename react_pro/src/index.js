@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'antd-mobile/dist/antd-mobile.css';
 import './styles/index.css';
 import Home from './views/Home'
 class App extends React.Component {
