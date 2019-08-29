@@ -1,9 +1,5 @@
 import React from 'react'
-// import Home from '../../views/Home'
-// import About from '../../views/About'
-// import Topics from '../../views/Topics'
-// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { TabBar } from 'antd-mobile';
+import { /*Router, Route,*/ NavLink } from "react-router-dom";
 import './nav.css'
 
 class NavBar extends React.Component {
@@ -18,7 +14,11 @@ class NavBar extends React.Component {
 	render() {
 		return (
 			<div className="nav">
-				<TabBar
+				<NavLink className="nav-item" activeClassName="selected" to="/home">主页</NavLink>
+				<NavLink className="nav-item" activeClassName="selected" to="/info">消息</NavLink>
+				<NavLink className="nav-item" activeClassName="selected" to="/friend">好友</NavLink>
+				<NavLink className="nav-item" activeClassName="selected" to="/my">我的</NavLink>
+				{/* <TabBar
 					unselectedTintColor="#949494"
 					tintColor="#33A3F4"
 					barTintColor="white"
@@ -121,7 +121,7 @@ class NavBar extends React.Component {
 						}}
 					>
 					</TabBar.Item>
-				</TabBar>
+				</TabBar> */}
 			</div>
 		);
 	}

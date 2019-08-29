@@ -1,5 +1,4 @@
 import React from 'react'
-import HomeHeader from './../components/home/HomeHeader'
 import HomeHeaderSearch from './../components/home/HomeHeaderSearch'
 import HomeSwiper from './../components/home/HomeSwiper'
 import FlexItem from './../components/home/FlexItem'
@@ -16,13 +15,12 @@ class Home extends React.Component {
 	}
 	render() {
 		return (
-			<React.Fragment>
-				<HomeHeader />
+			<div style={{paddingBottom:'50px'}}>
 				<HomeHeaderSearch />
 				<HomeSwiper />
 				<FlexItem />
 				<TabNav />
-			</React.Fragment>
+			</div>
 		)
 	}
 }

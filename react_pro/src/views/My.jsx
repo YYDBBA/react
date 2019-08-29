@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-class About extends React.Component {
+class My extends React.Component {
 	constructor() {
 		super();
 		this.state = {
@@ -12,11 +12,11 @@ class About extends React.Component {
 	}
 	render() {
 		return (
-			<div>
-				你们好
-			</div>
+			<React.Fragment>
+				我是话题
+			</React.Fragment>
 		)
 	}
 }
 
-export default About;
+export default My;

@@ -11,11 +11,11 @@ class MusicList extends React.Component {
 			<div className="my-list">
 				<div className="my-list-item item1">+</div>
 				<div className="my-list-item item1">
-					<img src="https://gw.alicdn.com/tfs/TB18P98tyQnBKNjSZFmXXcApVXa-183-144.png?getAvatar=1_.webp" style={{width:"86%",height:"100%",margin:"0 7%"}} alt=""/>
+					<img src="https://gw.alicdn.com/tfs/TB18P98tyQnBKNjSZFmXXcApVXa-183-144.png?getAvatar=1_.webp" style={{width:"94%",height:"100%",margin:"0 3%"}} alt=""/>
 				</div>
-				<div className="my-list-item item4">4</div>
-				<div className="my-list-item item4">5</div>
-				<div className="my-list-item item4">6</div>
+				<div className="my-list-item item4 c-black">{this.props.list.name}</div>
+				<div className="my-list-item item4">{this.props.list.autor}</div>
+				<div className="my-list-item item4 item-b">{this.props.list.comment}</div>
 			</div>);
 	}
 }

@@ -10,7 +10,7 @@ class HomeHeader extends React.Component {
 		}
 	}
 	render() {
-		return <div>
+		return <div style={{position:'fixed',top:'0px',left:'0px',zIndex:"2",width:"100%"}}>
 			<NavBar
 				mode="dark"
 				rightContent={[

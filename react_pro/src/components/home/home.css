@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.am-navbar{
+  background-color: rgb(233, 210, 210);
+}
+
 .my-flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -24,20 +28,29 @@
 
 .my-list {
   width: 100%;
-  padding-bottom: 50px;
   display: grid;
-  grid-template-columns: 15% 20% 65% 65% 65%;
+  grid-template-columns: 8% 23% 69% 69% 69%;
   grid-auto-flow: column;
 }
 .my-list-item {
-  height: 51px;
+  height: 63px;
+  background-color: #fff;
 }
 .item1 {
   grid-row: 1 / 4;
   text-align: center;
-  line-height: 51px;
+  line-height: 63px;
   font-size: 20px;
 }
 .item4 {
-  height: 17px;
+  height: 21px;
+  line-height: 21px;
+  color: rgb(170, 162, 162);
+}
+.c-black{
+  color:rgb(27, 22, 22);
+}
+
+.item-b{
+  border-bottom:1px solid #ccc;
 }
