@@ -2,6 +2,7 @@ import React from 'react'
 import './home.css'
 import { Tabs } from 'antd-mobile';
 import MusicList from './MusicList'
+import { NavLink } from 'react-router-dom'
 
 class TabNav extends React.Component {
 	state = {
@@ -54,7 +55,8 @@ class TabNav extends React.Component {
 					onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
 				>
 					<div style={{ height: '150px', backgroundColor: '#fff', width: '100%' }}>
-						{this.state.listData.map(item => <MusicList key={item.id} list={item} />)}
+						{this.state.listData.map(item =>
+							<NavLink to="/detail" key={item.id}><MusicList list={item} /></NavLink>)}
 					</div>
 					<div style={{ height: '150px', backgroundColor: '#fff' }}>
 						{this.state.listData.map(item => <MusicList key={item.id} list={item} />)}

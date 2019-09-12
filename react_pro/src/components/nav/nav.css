@@ -1,20 +1,22 @@
 .nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 3.125rem;
-  width: 100%;
-  display: flex;
-  z-index: 999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 3.125rem;
+    width: 100%;
+    display: flex;
+    background-color: rgb(224, 142, 142);
+    z-index: 999;
 }
-.nav-item{
-  width: 25%;
-  text-align: center;
-  line-height: 3.125rem;
-  color: #fff;
-  background-color: rgb(233, 210, 210);
+
+.nav-item {
+    width: 25%;
+    text-align: center;
+    line-height: 3.125rem;
+    color: #fff;
 }
-.selected{
-  color: rgb(97, 59, 59);
-  background-color: rgb(230, 189, 189);
+
+.selected {
+    color: rgb(97, 59, 59);
+    background-color: rgb(207, 91, 91);
 }

@@ -3,21 +3,18 @@ import './home.css'
 import { NavBar, Icon } from 'antd-mobile';
 
 class HomeHeader extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-
-		}
+	constructor(props) {
+		super(props);
 	}
 	render() {
-		return <div style={{position:'fixed',top:'0px',left:'0px',zIndex:"2",width:"100%"}}>
+		return this.props.isHead ? (<div style={{ position: 'fixed', top: '0px', left: '0px', zIndex: "2", width: "100%" }}>
 			<NavBar
 				mode="dark"
 				rightContent={[
 					<Icon key="1" type="ellipsis" />,
 				]}
-			>酷狗</NavBar>
-		</div>
+			>{this.props.headTitle}</NavBar>
+		</div>) : (null);
 	}
 }
 export default HomeHeader;
