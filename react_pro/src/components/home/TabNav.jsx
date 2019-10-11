@@ -51,8 +51,8 @@ class TabNav extends React.Component {
 			<div>
 				<Tabs tabs={this.state.tabs}
 					initialPage={0}
-					onChange={(tab, index) => { console.log('onChange', index, tab); }}
-					onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
+					onChange={(tab, index) => { }}
+					onTabClick={(tab, index) => { }}
 				>
 					<div style={{ height: '150px', backgroundColor: '#fff', width: '100%' }}>
 						{this.state.listData.map(item =>
