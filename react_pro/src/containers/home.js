@@ -1,9 +1,10 @@
-import React from 'react'
+// import React from 'react'
 import { connect } from 'react-redux'
-import { showNavCreator, notShowNavCreator } from '../redux/actions'
+import { showNavCreator, notShowNavCreator, loadSwiperAsync } from '../redux/actions'
 import Home from '../views/Home'
 export default connect(
     state => ({
-        obj: state.isShow
-    }), { showNavCreator, notShowNavCreator }
+        obj: state.isShow,
+        swiper: state.swiper
+    }), { showNavCreator, notShowNavCreator, loadSwiperAsync }
 )(Home)

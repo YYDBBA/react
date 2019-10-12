@@ -1,4 +1,4 @@
-import { SHOWNAV, NOTSHOWNAV } from './actionTypes'
+import { SHOWNAV, NOTSHOWNAV, LOADSWIPER } from './actionTypes'
 import { combineReducers } from 'redux'
 
 
@@ -15,6 +15,16 @@ function isShow(state = {
             return state
     }
 }
+
+function swiper(state = [], action) {
+    switch (action.type) {
+        case LOADSWIPER:
+            return action.data
+        default:
+            return state
+    }
+}
 export default combineReducers({
-    isShow
+    isShow,
+    swiper
 })
